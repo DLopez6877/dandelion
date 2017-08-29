@@ -4,9 +4,9 @@ var counter = 0;
 
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(1000, 1000);
   var a = createVector(width / 2, height);
-  var b = createVector(width / 2, 450);
+  var b = createVector(width / 2, 550);
   var root = new Branch(a, b);
 
   dandelion[0] = root;
