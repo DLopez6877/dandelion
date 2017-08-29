@@ -25,7 +25,7 @@ Branch.prototype.blowAway = function () {
 Branch.prototype.branchLeft = function() {
   var dir = p5.Vector.sub(this.end, this.begin);
   dir.rotate(this.angle * -1);
-  dir.mult(0.6);
+  dir.mult(0.55);
   var newEnd = p5.Vector.add(this.end, dir);
   var left = new Branch(this.end, newEnd);
   return left;
@@ -34,7 +34,7 @@ Branch.prototype.branchLeft = function() {
 Branch.prototype.branchRight = function() {
   var dir = p5.Vector.sub(this.end, this.begin);
   dir.rotate(this.angle);
-  dir.mult(0.6);
+  dir.mult(0.55);
   var newEnd = p5.Vector.add(this.end, dir);
   var right = new Branch(this.end, newEnd);
   return right;
@@ -43,7 +43,7 @@ Branch.prototype.branchRight = function() {
 Branch.prototype.branchMiddleLeft = function() {
   var dir = p5.Vector.sub(this.end, this.begin);
   dir.rotate(this.middleAngle * -1);
-  dir.mult(0.6);
+  dir.mult(0.55);
   var newEnd = p5.Vector.add(this.end, dir);
   var left = new Branch(this.end, newEnd);
   return left;
@@ -52,7 +52,7 @@ Branch.prototype.branchMiddleLeft = function() {
 Branch.prototype.branchMiddleRight = function() {
   var dir = p5.Vector.sub(this.end, this.begin);
   dir.rotate(this.middleAngle);
-  dir.mult(0.6);
+  dir.mult(0.55);
   var newEnd = p5.Vector.add(this.end, dir);
   var right = new Branch(this.end, newEnd);
   return right;
@@ -61,7 +61,7 @@ Branch.prototype.branchMiddleRight = function() {
 Branch.prototype.branchBottomLeft = function() {
   var dir = p5.Vector.sub(this.end, this.begin);
   dir.rotate(this.downAngle * -1);
-  dir.mult(0.6);
+  dir.mult(0.55);
   var newEnd = p5.Vector.add(this.end, dir);
   var left = new Branch(this.end, newEnd);
   return left;
@@ -70,7 +70,7 @@ Branch.prototype.branchBottomLeft = function() {
 Branch.prototype.branchBottomRight = function() {
   var dir = p5.Vector.sub(this.end, this.begin);
   dir.rotate(this.downAngle);
-  dir.mult(0.6);
+  dir.mult(0.55);
   var newEnd = p5.Vector.add(this.end, dir);
   var right = new Branch(this.end, newEnd);
   return right;
